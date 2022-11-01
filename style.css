@@ -1,5 +1,6 @@
 .container {
     width: 620px;
+    max-height: 600px;
     padding: 5px;
     border-radius: 10px;
     height: 620px;
@@ -25,7 +26,7 @@
     font-size: 20px;
     background-color: lightblue;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .challenge {
@@ -64,7 +65,7 @@
     height: 60px;
     border-radius: 5px;
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
     border: 2px darkcyan solid;
@@ -99,7 +100,7 @@
 }
 
 .numPositionHolder {
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 .numPosition {
