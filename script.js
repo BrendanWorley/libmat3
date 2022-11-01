@@ -131,7 +131,7 @@ console.log('number position =', numPosistionConverted);
 genButton.addEventListener('click', generateChallenge);
 
 function generateChallenge() {
-        let maxDigit = 99;
+        let maxDigit = 999;
 
         if (numPosistionConverted == 2) {
             maxDigit = 99;
