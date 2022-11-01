@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">  
+        <title>Либумбик и уравнения </title>
+    </head>
+
+    <body>
+    <div class="container">
+        
+        <button class="genButton">Генерировать уравнение</button>
+
+        <div class="challenge">
+            <p id="challenge__item" class="member1"></p>
+            <p id="challenge__item" class="arithOp"></p>
+            <p id="challenge__item" class="member2"></p>
+            <p id="challenge__item" class="equate"> = </p>
+            <p id="challenge__item" class="result"></p>
+        </div>
+            <div class="response">
+                <div class="response1">
+                    <input name="response1__digitResponse" class="response1__digitResponse" type="text" id="inputField">
+                <div id="inputShell">
+                    <input name="response1__checkbox_summand" class="response1__checkbox_summand" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_summand">Слагаемое</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_sum" class="response1__checkbox_sum" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_sum">Сумма</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_minuend" class="response1__checkbox_minuend" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_minuend">Уменьшаемое</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_subtrahend" class="response1__checkbox_subtrahend" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_subtrahend">Вычитаемое</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_difference" class="response1__checkbox_difference" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_difference">Разность</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_multiplier" class="response1__checkbox_multiplier" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_multiplier">Множитель</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_product" class="response1__checkbox_product" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_product">Произведение</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_dividend" class="response1__checkbox_dividend" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_dividend">Делимое</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_divisor" class="response1__checkbox_divisor" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_divisor">Делитель</label>
+                </div>
+                <div id="inputShell">
+                    <input name="response1__checkbox_quotient" class="response1__checkbox_quotient" type="checkbox" id="inputData">
+                    <label for="response1__checkbox_quotient">Частное</label>
+                </div>
+                    
+                </div>
+
+                    <input class="response__arith" type="text" id="inputField">
+                    
+                <div class="response2">
+                    <input class="response2__digitResponse" type="text" id="inputField">
+                <div id="inputShell">    
+                    <input name="response2__checkbox_summand" class="response2__checkbox_summand" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_summand">Слагаемое</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_sum" class="response2__checkbox_sum" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_sum">Сумма</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_minuend" class="response2__checkbox_minuend" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_minuend">Уменьшаемое</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_subtrahend" class="response2__checkbox_subtrahend" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_subtrahend">Вычитаемое</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_difference" class="response2__checkbox_difference" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_difference">Разность</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_multiplier" class="response2__checkbox_multiplier" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_multiplier">Множитель</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_product" class="response2__checkbox_product" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_product">Произведение</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_dividend" class="response2__checkbox_dividend" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_dividend">Делимое</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_divisor" class="response2__checkbox_divisor" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_divisor">Делитель</label>
+                </div>
+                <div id="inputShell">    
+                    <input name="response2__checkbox_quotient" class="response2__checkbox_quotient" type="checkbox" id="inputData">
+                    <label for="response2__checkbox_quotient">Частное</label>
+                </div>
+
+                </div>
+                    <p class="response__equalizer" type="text"> = </p>
+                <div class="responseRes">
+                    <input class="responseRes__digitResponse" type="text" id="inputField">
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_summand" class="responseRes__checkbox_summand" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_summand">Слагаемое</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_sum" class="responseRes__checkbox_sum" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_sum">Сумма</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_minuend" class="responseRes__checkbox_minuend" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_minuend">Уменьшаемое</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_subtrahend" class="responseRes__checkbox_subtrahend" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_subtrahend">Вычитаемое</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_difference" class="responseRes__checkbox_difference" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_difference">Разность</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_multiplier" class="responseRes__checkbox_multiplier" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_multiplier">Множитель</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_product" class="responseRes__checkbox_product" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_product">Произведение</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_dividend" class="responseRes__checkbox_dividend" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_dividend">Делимое</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_divisor" class="responseRes__checkbox_divisor" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_divisor">Делитель</label>
+                </div>
+                <div class="inputShell">    
+                    <input name="responseRes__checkbox_quotient" class="responseRes__checkbox_quotient" type="checkbox" id="inputData">
+                    <label for="responseRes__checkbox_quotient">Частное</label>
+                </div>
+
+                </div>
+            
+            </div>
+            <div class="checking">
+                <button class="checkButton">Проверить</button>
+                <p class="checkResult"></p>
+            </div>
+            <div class="numPositionHolder">
+                <input class="numPosition" type="text">
+                <button class="refresh">Обновить</button>
+                <button class="numPosButton">Задать разряд</button>
+            </div>
+            
+    </div>
+    
+    
+    </body>
+    <script src="script.js"></script>
+</html>
