@@ -332,14 +332,14 @@ function generateChallenge() {
 
         function AdevX() {
             // scenario - 7
-            let x = Math.floor((Math.random() * 10) + 1);
+            let x = Math.floor((Math.random() * 110) + 1); // changed 9 for 110
             console.log('x=', x);
             member2.textContent = 'X';
             generatedMember2 = x;
             arithOp.textContent = ' : '
             
             for (i = 1; i <= maxDigit; i++) {
-                let b = Math.floor((Math.random() * 111) + 1);
+                let b = Math.floor((Math.random() * 9) + 1); // changed 111 for 9
                 let a = x * b;
                 if (a <= maxDigit) {
                     console.log('b=', b);
