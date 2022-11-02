@@ -405,13 +405,20 @@ function checkRespond() {
                     break;
                 };
         case 2:
-            if (respondingMember1 === generatedMember2
+            if ((respondingMember1 === generatedMember2
                 && respondingArith === '+'
                 && respondingMember2 === generatedResult
                 && respondingResult === generatedMember1
                 && response1__checkbox_subtrahend.checked === true
                 && response2__checkbox_difference.checked === true
-                && responseRes__checkbox_minuend.checked === true) {
+                && responseRes__checkbox_minuend.checked === true)
+                || (respondingMember1 === generatedResult
+                    && respondingArith === '+'
+                    && respondingMember2 === generatedMember2
+                    && respondingResult === generatedMember1
+                    && response1__checkbox_difference.checked === true
+                    && response2__checkbox_subtrahend.checked === true
+                    && responseRes__checkbox_minuend.checked === true)) {
                     console.log('ПРАВИЛЬНО');
                     checkData = 'Правильно !'
                     break;
@@ -469,13 +476,20 @@ function checkRespond() {
                     break;
                 };
         case 6:
-            if (respondingMember1 === generatedMember2
+            if ((respondingMember1 === generatedMember2
                 && respondingArith === '*'
                 && respondingMember2 === generatedResult
                 && respondingResult === generatedMember1
                 && response1__checkbox_divisor.checked === true
                 && response2__checkbox_quotient.checked === true
-                && responseRes__checkbox_dividend.checked === true) {
+                && responseRes__checkbox_dividend.checked === true) || 
+                (respondingMember1 === generatedResult
+                    && respondingArith === '*'
+                    && respondingMember2 === generatedMember2
+                    && respondingResult === generatedMember1
+                    && response1__checkbox_quotient.checked === true
+                    && response2__checkbox_divisor.checked === true
+                    && responseRes__checkbox_dividend.checked === true)) {
                     console.log('ПРАВИЛЬНО');
                     checkData = 'Правильно !'
                     break;
